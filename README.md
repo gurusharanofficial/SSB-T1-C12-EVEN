@@ -31,8 +31,37 @@ PROCEDURE:
 6.Verify the generated results
 
 PROGRAM:
-
+```
+Am=13.9;
+Ac=27.8;
+fm=506;
+fc=5060;
+fs=50600;
+wm=2*3.14*fm;
+wc=2*3.14*fc;
+t=0:1/fs:2/fm;
+m1=Am*cos(wm*t);
+m2=Am*cos(1.57-(wm*t));
+subplot(4,1,1);
+plot(t,m1);
+c1=Ac*cos(wc*t);
+c2=Ac*cos(1.57-(wc*t));
+subplot(4,1,2);
+plot(t,c1);
+s1=c1.*m1;
+s2=c2.*m2;
+Slsb=s1+s2;
+subplot(4,1,3);
+plot(t,Slsb);
+Susb=s1-s2;
+subplot(4,1,4);
+plot(t,Susb);
+```
 OUTPUT GRAPH:
+<img width="1912" height="1117" alt="Screenshot 2026-03-16 195100" src="https://github.com/user-attachments/assets/d7b4f6fc-6a6f-47d1-951c-650ea9138757" />
+
+TABULATION
+<img width="1833" height="1500" alt="image" src="https://github.com/user-attachments/assets/8c802612-e18f-4e3c-a5f5-52a82f647d86" />
 
 RESULT:
-
+Thus, the SSB-SC-AM Modulation and Demodulation is experimentally done and the output is verified.
