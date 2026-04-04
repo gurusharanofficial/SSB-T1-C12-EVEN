@@ -1,4 +1,5 @@
 # SSB-T1-C12-EVEN
+
 AIM:
 
 To write a program for mean, variance and cross correlation in SCILAB and verify the output.
@@ -9,6 +10,7 @@ EQUIPMENTS NEEDED:
 
 .SCI LAB
 
+
 ALGORITHM:
 
 Define the Function: Specify the function you want to simulate. For example, f(x)=sin⁡(x)f(x)=sin(x) or any other function.
@@ -16,6 +18,7 @@ Generate Sample Points: Decide on the range and the number of sample points. Gen
 Evaluate the Function: Compute the function values at each of these sample points.
 Compute Mean, Variance and Cross Correlation: Use Scilab's functions to calculate the mean and variance of the computed function values.
 Display Results: Output the computed mean variance and Cross Correlation
+
 PROCEDURE:
 
 1.Refer Algorithms and write code for the experiment.
@@ -31,6 +34,7 @@ PROCEDURE:
 6.Verify the generated results
 
 PROGRAM:
+
 ```
 Am=13.9;
 Ac=27.8;
@@ -57,11 +61,15 @@ Susb=s1-s2;
 subplot(4,1,4);
 plot(t,Susb);
 ```
+
 OUTPUT GRAPH:
+
 <img width="1912" height="1117" alt="Screenshot 2026-03-16 195100" src="https://github.com/user-attachments/assets/d7b4f6fc-6a6f-47d1-951c-650ea9138757" />
 
 TABULATION
+
 <img width="1833" height="1500" alt="image" src="https://github.com/user-attachments/assets/8c802612-e18f-4e3c-a5f5-52a82f647d86" />
 
 RESULT:
+
 Thus, the SSB-SC-AM Modulation and Demodulation is experimentally done and the output is verified.
